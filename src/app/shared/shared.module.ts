@@ -1,6 +1,7 @@
 import { NgModule } from "@angular/core";
 import { CommonModule } from "@angular/common";
 import { HttpClient } from "@angular/common/http";
+import { NavbarComponent } from "../shared/navbar/navbar.component";
 
 
 // ngx translate imports..................................
@@ -22,7 +23,7 @@ export function createTranslateLoader(http: HttpClient) {
       }
     })
   ],
-  declarations: [],
-  exports: [TranslateModule]
+  declarations: [NavbarComponent],
+  exports: [TranslateModule, NavbarComponent]
 })
 export class SharedModule {}
