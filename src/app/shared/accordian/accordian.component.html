@@ -1,8 +1,9 @@
-<div class="box-acc my-3" id="{{ id }}">
-  <div class="box-acc__title" *ngIf="title">
+<div class="box-acc my-3 mx-auto" id="{{ id }}">
+  <div class="w-100" [ngClass]="{ 'box-acc__container' : !isCollapsed}">
+  <div class="box-acc__title d-inline-block pl-3" *ngIf="title">
     {{ title }}
   </div>
-  <button type="button" (click)="updateDom()">
+  <button class="box-acc__btn" type="button" (click)="updateDom()">
     <img
       [src]="
         isCollapsed
@@ -11,6 +12,7 @@
       "
     />
   </button>
+</div>
 
   <div *ngIf="!isCollapsed">
     <ng-content></ng-content>

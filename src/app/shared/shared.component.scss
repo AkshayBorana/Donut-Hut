@@ -1,0 +1,10 @@
+@import "variables";
+
+.details-box{
+    padding-left: 16px;
+
+    &__items {
+        font-size: $xs-txt;
+        color: $gray;
+    }
+}
