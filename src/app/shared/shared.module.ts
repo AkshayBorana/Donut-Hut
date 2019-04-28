@@ -7,6 +7,7 @@ import { DonutProductionComponent } from "./donut-production/donut-production.co
 import { DonutExpensecomponent } from "./donut-expense/donut-expense.component";
 import { DonutSalesVolumeComponent } from "./donut-sales-volume/donut-sales-volume.component";
 import { DonutSalesRevenueComponent } from "./donut-sales-revenue/donut-sales-revenue.component";
+import { DonutNetRevenueComponent } from "./donut-net-revenue/donut-net-revenue.component";
 
 // ngx translate imports..................................
 import { TranslateLoader, TranslateModule } from "@ngx-translate/core";
@@ -33,7 +34,8 @@ export function createTranslateLoader(http: HttpClient) {
     DonutProductionComponent,
     DonutExpensecomponent,
     DonutSalesVolumeComponent,
-    DonutSalesRevenueComponent
+    DonutSalesRevenueComponent,
+    DonutNetRevenueComponent
   ],
   exports: [
     TranslateModule,
@@ -42,7 +44,8 @@ export function createTranslateLoader(http: HttpClient) {
     DonutProductionComponent,
     DonutExpensecomponent,
     DonutSalesVolumeComponent,
-    DonutSalesRevenueComponent
+    DonutSalesRevenueComponent,
+    DonutNetRevenueComponent
   ]
 })
 export class SharedModule {}
