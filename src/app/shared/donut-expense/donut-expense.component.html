@@ -3,24 +3,24 @@
 [initialCollapse]="collapse"
 [idPrefix]="id"
 >
-    <div *ngFor="let salary of salaries">
-        <p>Baker : {{salary.baker}}</p>
-        <p>Cashier : {{salary.cashier}}</p>
-        <p>Manager : {{salary.manager}}</p>
+    <div *ngFor="let salary of salaries"  class="details-box py-4">
+        <p class="details-box__items mb-0">Baker : {{salary.baker}}</p>
+        <p class="details-box__items mb-0">Cashier : {{salary.cashier}}</p>
+        <p class="details-box__items mb-0">Manager : {{salary.manager}}</p>
     </div>
 
-    <div *ngFor="let material of materials">
-        <p>Flour : {{material.flour}}</p>
-        <p>Sugar : {{material.sugar}}</p>
-        <p>Chocolate : {{material.chocolate}}</p>
-        <p>Nuts : {{material.nuts}}</p>
-        <p>white Chocolate : {{material.whiteChocolate}}</p>
+    <div *ngFor="let material of materials"  class="details-box py-4">
+        <p class="details-box__items mb-0">Flour : {{material.flour}}</p>
+        <p class="details-box__items mb-0">Sugar : {{material.sugar}}</p>
+        <p class="details-box__items mb-0">Chocolate : {{material.chocolate}}</p>
+        <p class="details-box__items mb-0">Nuts : {{material.nuts}}</p>
+        <p class="details-box__items mb-0">white Chocolate : {{material.whiteChocolate}}</p>
     </div>
 
-    <div *ngFor="let facility of facilities">
-        <p>Electricity Bill : {{facility.electricityBill}}</p>
-        <p>Maintenance Bill : {{facility.maintenanceBill}}</p>
-        <p>Delivery Charge : {{facility.DeliverCharge}}</p>
+    <div *ngFor="let facility of facilities"  class="details-box py-4">
+        <p class="details-box__items mb-0">Electricity Bill : {{facility.electricityBill}}</p>
+        <p class="details-box__items mb-0">Maintenance Bill : {{facility.maintenanceBill}}</p>
+        <p class="details-box__items mb-0">Delivery Charge : {{facility.DeliverCharge}}</p>
     </div>
 
 

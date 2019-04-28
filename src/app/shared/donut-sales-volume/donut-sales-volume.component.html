@@ -3,10 +3,10 @@
 [initialCollapse]="collapse"
 [idPrefix]="id"
 >
-    <div *ngFor="let sale of sales">
-        <p>chocolate Donuts : {{ sale.chocolateDonuts }} </p>
-        <p>white Chocolate Donuts : {{ sale.whiteChocolatedonut }} </p>
-        <p>glace Donuts : {{ sale.glaceDonuts }} </p>
-        <p>chocochip Donuts : {{ sale.chocochipDonuts }} </p>
+    <div *ngFor="let sale of sales"  class="details-box py-4">
+        <p class="details-box__items mb-0">chocolate Donuts : {{ sale.chocolateDonuts }} </p>
+        <p class="details-box__items mb-0">white Chocolate Donuts : {{ sale.whiteChocolatedonut }} </p>
+        <p class="details-box__items mb-0">glace Donuts : {{ sale.glaceDonuts }} </p>
+        <p class="details-box__items mb-0">chocochip Donuts : {{ sale.chocochipDonuts }} </p>
     </div>
 </dn-accordian>

@@ -3,9 +3,10 @@
 [initialCollapse]="collapse"
 [idPrefix]="id"
 >
-    <div *ngFor="let prod of productions">
-        <p>Daily Production : {{ prod.daily }} </p>
-        <p>Weekly Production : {{ prod.weekly }} </p>
-        <p>Monthly Production : {{ prod.monthly }} </p>
+    <div *ngFor="let prod of productions"
+    class="details-box py-4">
+        <p class="details-box__items mb-0">Daily Production : {{ prod.daily }} </p>
+        <p class="details-box__items mb-0">Weekly Production : {{ prod.weekly }} </p>
+        <p class="details-box__items mb-0">Monthly Production : {{ prod.monthly }} </p>
     </div>
 </dn-accordian>

@@ -16,7 +16,7 @@ import { Component } from "@angular/core";
         name: "Mad Over Doughnuts",
         image: "/assets/images/doughnut-wall.png",
         address: "1846 Saint-Catherine St W",
-        phone: "514 737 111"
+        phone: "514737111"
     }
     ]
 }

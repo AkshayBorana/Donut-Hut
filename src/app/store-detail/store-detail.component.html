@@ -1,29 +1,27 @@
 <div class="container-fluid h-100 px-0">
-    <!-- navbar -->
-    <dn-navbar></dn-navbar>
+  <!-- navbar -->
+  <dn-navbar></dn-navbar>
 
-     <!-- <div class="container dn-info"> -->
-    <div
-      class="row w-100 mx-auto dn-info"
-      *ngFor="let storeInfo of storeInformation; let i = index"
-    >
-      <div class="col-12 dn-info__block text-center">
-        <p class="dn-info__name pt-5 mb-4">{{ storeInfo.name }}</p>
-
-         <img src="{{ storeInfo.image }}" class="dn-info__img">
-
-         <p class="dn-info__storename pt-4 mb-0">{{ storeInfo.name }}</p>
-        <p class="dn-info__addr mb-0">{{ storeInfo.address }}</p>
-        <p class="dn-info__phone">{{ storeInfo.phone }}</p>
-        <p></p>
-      </div>
+  <div
+    class="row w-100 mx-auto dn-info"
+    *ngFor="let storeInfo of storeInformation; let i = index"
+  >
+    <div class="col-12 dn-info__block text-center">
+      <img src="{{ storeInfo.image }}" class="dn-info__img pt-5 mb-4" />
+      <p class="dn-info__name mb-0">{{ storeInfo.name }}</p>
+      <p class="dn-info__addr mb-0">{{ storeInfo.address }}</p>
+      <p class="dn-info__phone">{{ storeInfo.phone }}</p>
+      <p></p>
     </div>
-    <!-- </div> -->
-
-    <dn-production></dn-production>
-    <dn-expense></dn-expense>
-    <dn-sales-volume></dn-sales-volume>
-    <dn-sales-revenue></dn-sales-revenue>
-    <dn-net-revenue></dn-net-revenue>
-    <dn-employee></dn-employee>
   </div>
+  <!-- </div> -->
+  <div class="store-accordians my-5">
+    <p class="mb-4 text-center store-details">Store Details</p>
+  <dn-production></dn-production>
+  <dn-expense></dn-expense>
+  <dn-sales-volume></dn-sales-volume>
+  <dn-sales-revenue></dn-sales-revenue>
+  <dn-net-revenue></dn-net-revenue>
+  <dn-employee></dn-employee>
+</div>
+</div>

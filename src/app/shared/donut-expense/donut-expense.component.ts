@@ -3,7 +3,7 @@ import { Component } from "@angular/core";
 @Component({
   selector: "dn-expense",
   templateUrl: "./donut-expense.component.html",
-  styleUrls: ["./donut-expense.component.html"]
+  styleUrls: ["./donut-expense.component.scss"]
 })
 export class DonutExpensecomponent {
   prodTitle: string = "Expenses";

@@ -19,3 +19,15 @@ $doughnut-max-height: 600px;
      font-size: $sm-txt;
  }
 }
+
+.store{
+  &-accordians{
+  margin: 0px 15px 0px 15px;
+  }
+
+  &-details{
+    color: $gray;
+    font-size: $md-txt;
+
+  }
+}
