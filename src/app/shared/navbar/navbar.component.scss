@@ -1,0 +1,10 @@
+@import "variables";
+
+.top-bar {
+  height: $nav-bar-height;
+  box-shadow: 1px 1px 5px $dark-gray;
+
+  &__link {
+      font-size: 28px;
+  }
+}
