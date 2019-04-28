@@ -1,0 +1,27 @@
+<dn-accordian
+[title]="prodTitle"
+[initialCollapse]="collapse"
+[idPrefix]="id"
+>
+    <div *ngFor="let salary of salaries">
+        <p>Baker : {{salary.baker}}</p>
+        <p>Cashier : {{salary.cashier}}</p>
+        <p>Manager : {{salary.manager}}</p>
+    </div>
+
+    <div *ngFor="let material of materials">
+        <p>Flour : {{material.flour}}</p>
+        <p>Sugar : {{material.sugar}}</p>
+        <p>Chocolate : {{material.chocolate}}</p>
+        <p>Nuts : {{material.nuts}}</p>
+        <p>white Chocolate : {{material.whiteChocolate}}</p>
+    </div>
+
+    <div *ngFor="let facility of facilities">
+        <p>Electricity Bill : {{facility.electricityBill}}</p>
+        <p>Maintenance Bill : {{facility.maintenanceBill}}</p>
+        <p>Delivery Charge : {{facility.DeliverCharge}}</p>
+    </div>
+
+
+</dn-accordian>

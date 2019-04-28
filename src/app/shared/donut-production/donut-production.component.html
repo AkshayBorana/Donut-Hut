@@ -1,0 +1,11 @@
+<dn-accordian
+[title]="prodTitle"
+[initialCollapse]="collapse"
+[idPrefix]="id"
+>
+    <div *ngFor="let prod of productions">
+        <p>Daily Production : {{ prod.daily }} </p>
+        <p>Weekly Production : {{ prod.weekly }} </p>
+        <p>Monthly Production : {{ prod.monthly }} </p>
+    </div>
+</dn-accordian>

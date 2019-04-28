@@ -1,0 +1,18 @@
+<div class="box-acc my-3" id="{{ id }}">
+  <div class="box-acc__title" *ngIf="title">
+    {{ title }}
+  </div>
+  <button type="button" (click)="updateDom()">
+    <img
+      [src]="
+        isCollapsed
+          ? '/assets/images/caret-down.png'
+          : '/assets/images/caret-up.png'
+      "
+    />
+  </button>
+
+  <div *ngIf="!isCollapsed">
+    <ng-content></ng-content>
+  </div>
+</div>
