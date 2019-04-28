@@ -5,6 +5,8 @@
   box-shadow: 1px 1px 5px $dark-gray;
 
   &__link {
-      font-size: 28px;
+    font-size: $lg-txt;
+    cursor: pointer;
+    color: $gray !important;
   }
 }

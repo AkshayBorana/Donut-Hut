@@ -1,0 +1,20 @@
+@import "variables";
+
+$doughnut-max-height: 600px;
+
+.dn-info {
+  &__name {
+    color: $gray;
+    font-size: $lg-txt;
+  }
+
+  &__img {
+    width: 100%;
+    max-width: $doughnut-max-height;
+  }
+
+  &__storename, &__addr,&__phone {
+      color: $gray;
+      font-size: $sm-txt;
+  }
+}
