@@ -5,6 +5,7 @@ import { NavbarComponent } from "../shared/navbar/navbar.component";
 import { AccordianComponent } from "../shared/accordian/accordian.component";
 import { DonutProductionComponent } from "./donut-production/donut-production.component";
 import { DonutExpensecomponent } from "./donut-expense/donut-expense.component";
+import { DonutSalesVolumeComponent } from "./donut-sales-volume/donut-sales-volume.component";
 
 // ngx translate imports..................................
 import { TranslateLoader, TranslateModule } from "@ngx-translate/core";
@@ -29,14 +30,16 @@ export function createTranslateLoader(http: HttpClient) {
     NavbarComponent,
     AccordianComponent,
     DonutProductionComponent,
-    DonutExpensecomponent
+    DonutExpensecomponent,
+    DonutSalesVolumeComponent
   ],
   exports: [
     TranslateModule,
     NavbarComponent,
     AccordianComponent,
     DonutProductionComponent,
-    DonutExpensecomponent
+    DonutExpensecomponent,
+    DonutSalesVolumeComponent
   ]
 })
 export class SharedModule {}

@@ -1,0 +1,12 @@
+<dn-accordian
+[title]="prodTitle"
+[initialCollapse]="collapse"
+[idPrefix]="id"
+>
+    <div *ngFor="let sale of sales">
+        <p>chocolate Donuts : {{ sale.chocolateDonuts }} </p>
+        <p>white Chocolate Donuts : {{ sale.whiteChocolatedonut }} </p>
+        <p>glace Donuts : {{ sale.glaceDonuts }} </p>
+        <p>chocochip Donuts : {{ sale.chocochipDonuts }} </p>
+    </div>
+</dn-accordian>
