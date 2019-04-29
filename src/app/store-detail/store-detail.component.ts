@@ -1,5 +1,4 @@
 import { Component } from "@angular/core";
-// import { StoreInfo } from "./store-info";
 
 
  @Component({
